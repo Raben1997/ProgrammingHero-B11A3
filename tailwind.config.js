@@ -19,7 +19,16 @@ module.exports = {
         'custom-white': '#fff',
         'custom-green': '#179800',
         'custom-ass': '#EFEBE3',
-      }
+      },
+      animation: {
+        slideIn: 'slideIn 1s ease-out forwards', // Runs once and stays at the final position
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(-100%)' }, // Start off-screen to the left
+          '100%': { transform: 'translateX(0)' },    // End at the original position
+        },
+      },
     },
   },
   plugins: [],
