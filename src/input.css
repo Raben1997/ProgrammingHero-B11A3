@@ -17,6 +17,9 @@
   h4 {
     @apply text-[24px] font-semibold leading-[30px];
   }
+  h6{
+    @apply text-[18px] font-medium leading-[26px] ;
+  }
   .container {
     @apply px-[15px] mx-auto max-w-[1320px];
   }
@@ -60,6 +63,9 @@
     h2 {
       @apply text-[26px] leading-[30px];
     }
+    h6{
+      @apply text-[16px] leading-[22px] ;
+    }
   }
 
   @media (max-width: 767px) {
@@ -71,6 +77,11 @@
     }
     h2 {
       @apply text-[24px] leading-[30px];
+    }
+  }
+  @media (max-width: 575px) {
+    h6{
+      @apply text-[12px] leading-[18px] ;
     }
   }
 }
